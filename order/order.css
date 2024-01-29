@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    
+}
+.choose-delivery {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: white;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img {
+    width: 70px;
+    height: 25px;
+    margin-left: 20px;
+}
+.profile {
+    width: 42px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.order-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.checkout-text {
+    font-size: 27px;
+    font-weight: 500;
+    color: black;
+}
+.items-incart{
+    color: gray;
+}
+.main {
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+}
+.review-order {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 15px;
+    
+}
+.review {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.delivery-date {
+    font-size: 20px;
+    color: green;
+    font-weight: 600;
+
+}
+#delivery-date {
+    padding-bottom: 5px;
+    color: green;
+    font-size: 17px;
+    margin-top: 0;
+}
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 5px;
+}
+#delivery-price {
+    display: block;
+    
+}
+.delivery-option {
+    display: flex;
+
+}
+.input {
+    width: 30px;
+    display: flex;
+
+}
+.delivery-option-input {
+    cursor: pointer;
+    width: 20px;
+}
+
+.delivery-price {
+    padding-bottom: 5px;
+}
+.product-img {
+    width: 100px;
+    padding: 20px;
+    grid-area: product-img;
+}
+.product-info {
+    display: grid;
+    grid-template-rows: 240px;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    grid-template-areas: 
+    "product-img order-info delivery-options";
+} 
+.delivery-options {
+    grid-area: delivery-options;
+}
+.order {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "order-box order-summary";
+}
+.order-info {
+    padding: 20px;
+    grid-area: order-info;
+}
+.order-item {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.priceofitem {
+    
+    
+}
+.product-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+
+}
+.price {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: red;
+}
+.quantity {
+    display: flex;
+    padding: 3px;
+}
+.quantity button {
+    border: none;
+    background: none;
+    color: green;
+    margin-right: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.checkout {
+    border: 2px solid rgb(142, 136, 136);
+    border-radius: 3px;
+    margin-top: 5px;
+    
+    width: 600px;
+    grid-area: order-box;
+}
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 2px solid rgb(142, 136, 136);
+    margin-left: 10px;
+    border-radius: 3px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    align-content: space-between;
+    grid-area: order-summary;
+
+}
+.ordertotal {
+    display: flex;
+    flex-direction: column;
+}
+.ordertotal button{
+    
+    padding: 7px 10px;
+    color: whitesmoke;
+    background: orange;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 15px;
+}
+.border-bottom {
+    border-bottom: 1px rgb(201, 194, 194) solid;
+    padding-bottom: 3px;
+}
+.order-text {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+    padding: 10px;
+}
+@media( max-width: 960px) {
+  .order{
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "order-summary"
+    "order-box"
+    ;
+  }   
+  .main {
+    justify-content: center;
+
+  }
+  .summary {
+    width: 595px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 650px) {
+    .summary {
+        width: 400px;
+    }
+    .checkout {
+        width: 450px;
+    }
+    .product-info {
+        
+        grid-template-areas: 
+        "product-img order-info"
+        "delivery-options delivery-options"
+        ;
+    }
+}
