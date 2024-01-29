@@ -64,7 +64,7 @@
     font-size: 20px;
     color: green;
     font-weight: 600;
-
+    padding: 5px;
 }
 #delivery-date {
     padding-bottom: 5px;
@@ -148,10 +148,11 @@
     display: flex;
     padding: 3px;
 }
-.quantity button {
+.buttons button {
     border: none;
     background: none;
     color: green;
+    margin-top: 15px;
     margin-right: 3px;
     margin-left: 5px;
     cursor: pointer;
@@ -208,7 +209,6 @@
 @media( max-width: 960px) {
   .order{
     grid-template-columns: 1fr;
-
     grid-template-areas: 
     "order-summary"
     "order-box"
@@ -225,16 +225,28 @@
 }
 @media (max-width: 650px) {
     .summary {
-        width: 400px;
+        width: 89%;
+        
     }
     .checkout {
-        width: 450px;
+        width: 90%;
     }
     .product-info {
-        
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 200px;
         grid-template-areas: 
         "product-img order-info"
         "delivery-options delivery-options"
         ;
+        padding: 10px;
     }
+    .product-img {
+        padding-right: 0;
+    }
+    .order-info {
+        
+    }
+}
+@media( max-width: 480px) {
+    
 }
