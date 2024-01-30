@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Review your order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="order/order.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./index.html"><img src="../images/logo2.png" class="logo-img" /></a>
+      </div>
+      <div>
+        <span class="checkout-text">Checkout(<span class="items-incart">3 Items</span>)</span>
+      </div>
+      <div>
+        <img src="../images/profile.png" alt="" class="profile" />
+      </div>
+    </nav>
+    <main class="main">
+      <!--container is block-->
+      <div class="review-order">
+        <div class="review">Review your order</div>
+        <div class="order">
+          <!--container is flex-->
+          <div class="checkout js-order-summary">
+
+          </div>
+          <div class="summary">
+            <div class="order-text">Order Summary</div>
+            <div class="order-list">
+              <div class="order-item">Items (3): <span class="priceofitem">$42.75</span> </div>
+              <div class="order-item">Shopping & handling: <span class="priceofitem border-bottom">$4.99</span></div>
+            </div>
+            <div class="sum">
+              <div class="order-item">Total before tax: <span class="priceofitem"> $47.74</span></div>
+              <div class="order-item">Estimated tax (10%): <span class="priceofitem border-bottom">$4.77</span> </div>
+            </div>
+            <div class="ordertotal">
+              <div class="order-item total">Order total:</span><span class="priceofitem">$52.51</div>
+              <button class="placeorder">Place your order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script type="module" src="order/order.js"></script>
+  </body>
+</html>
