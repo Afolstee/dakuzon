@@ -4,6 +4,10 @@
     margin-bottom: 0;
     
 }
+body {
+    font-family: Roboto, Arial;
+    color:rgb(33, 33, 33);
+}
 .choose-delivery {
     margin-top: 20px;
     font-weight: 700;
@@ -52,8 +56,8 @@
 }
 .review-order {
     padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 .review {
@@ -74,6 +78,7 @@
     color: green;
     font-size: 17px;
     margin-top: 0;
+    font-weight: 600;
 }
 .delivery-container {
     display: flex;
@@ -101,6 +106,8 @@
 
 .delivery-price {
     padding-bottom: 5px;
+    color: rgb(121, 114, 114);
+    font-weight: 400;
 }
 .product-img {
     width: 100px;
@@ -109,7 +116,8 @@
 }
 .product-info {
     margin-top: 10px;
-    border: 2px solid rgb(142, 136, 136);
+    border: 2px solid rgb(234, 221, 221);
+    background-color: whitesmoke;
     border-radius: 3px;
     display: grid;
     grid-template-rows: 240px;
@@ -175,12 +183,12 @@
     flex-direction: column;
     height: 300px;
     width: 300px;
-    border: 2px solid rgb(142, 136, 136);
+    background-color: whitesmoke;
+    border: 2px solid rgb(243, 233, 233);
     margin-left: 10px;
     border-radius: 3px;
     margin-top: 15px;
     margin-right: 5px;
-    padding: 5px;
     align-content: space-between;
     grid-area: order-summary;
 
@@ -191,14 +199,22 @@
 }
 .ordertotal button{
     
-    padding: 7px 10px;
-    color: whitesmoke;
-    background: orange;
-    border: none;
-    font-weight: 600;
-    border-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: black;
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
     cursor: pointer;
-    margin: 0px 15px;
+    margin: 5px 10px;
+}
+.ordertotal button:hover {
+    background-color: rgb(198, 167, 12);
+}
+.sum {
+    border-bottom: 1px solid rgb(190, 180, 180);
 }
 .total {
     color: red;
@@ -210,9 +226,8 @@
     padding-bottom: 3px;
 }
 .order-text {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 20px;
-    color: red;
     font-weight: 600;
     padding: 10px;
 }
@@ -228,28 +243,31 @@
     justify-content: center;
 
   }
+  .product-info {
+    width: 100%;
+  }
   .summary {
-    width: 590px;
+    width: 100%;
     margin-left: 0;
   }
 }
 @media (max-width: 650px) {
     .summary {
-        width: 86%;
-        
+        width: 100%;
+        ;
     }
     .checkout {
-        width: 90%;
+        width: 100%;
     }
     .product-info {
         
-        grid-template-columns: 0.7fr 1fr;
-        grid-template-rows: 200px;
+        grid-template-columns: 0.4fr 0.6fr;
+        grid-template-rows: 162px;
         grid-template-areas: 
         "product-img order-info"
         "delivery-options delivery-options"
         ;
-        padding: 10px;
+        
     }
     
     .product-img {
@@ -257,15 +275,11 @@
     }
     .delivery-options {
         padding-left: 40px;
-        text-wrap: nowrap;
-    }
-    .order-info {
-        
     }
 }
 @media( max-width: 428px) {
     .product-img {
-        padding: 5px;
+        padding-left: 10px;
 
     }
     .order-info {
