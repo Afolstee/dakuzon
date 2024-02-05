@@ -54,7 +54,7 @@ export function updateCartQuantity() {
    });
    
    document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
-   
+
    
 }
 
@@ -70,3 +70,11 @@ export function removeFromCart(productId) {
   cart = newCart;
   saveToCart();
 }
+
+
+
+
+
+
+
+
