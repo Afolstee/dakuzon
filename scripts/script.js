@@ -46,5 +46,18 @@ document.querySelectorAll(".js-add-to-cart")
     const productId = button.dataset.productId;
     addToCart(productId);
     updateCartQuantity();
+    toast(addedmsg);
   });
 });
+const toastDiv = document.querySelector('.toast');
+let addedmsg = '<i class="ri-checkbox-circle-fill"></i> Added'
+function toast(msg) {
+  const toastBox = document.createElement('div');
+  toastBox.classList.add('toastmsg');
+  toastBox.innerHTML = msg;
+  toastDiv.appendChild(toastBox);
+
+  setTimeout(() => {
+    toastBox.remove();
+  }, 2500);
+}
