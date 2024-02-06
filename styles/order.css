@@ -278,6 +278,14 @@ body {
     }
 }
 @media( max-width: 428px) {
+    .logo-img {
+        width: 50px;
+        margin-left: 10px;
+    }
+    .profile {
+        width: 40px;
+        height: 38px;
+    }
     .product-img {
         padding-left: 10px;
 
@@ -291,5 +299,8 @@ body {
     }
     .checkout {
         width: 350px;
+    }
+    .checkout-text {
+        font-size: 1.3em;
     }
 }
