@@ -11,7 +11,7 @@ body {
 .choose-delivery {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.3em;
 
 }
 .navbar {
@@ -42,7 +42,7 @@ body {
 
 }
 .checkout-text {
-    font-size: 27px;
+    font-size: 1.8rem;
     font-weight: 500;
     color: black;
 }
@@ -61,12 +61,12 @@ body {
     
 }
 .review {
-    font-size: 25px;
+    font-size: 1.6em;
     font-weight: 600;
 }
 
 .delivery-date {
-    font-size: 20px;
+    font-size: 1.3em;
     color: green;
     font-weight: 600;
     padding-top: 5px;
@@ -77,7 +77,7 @@ body {
 #delivery-date {
     padding-bottom: 5px;
     color: green;
-    font-size: 17px;
+    font-size: 1.2em;
     margin-top: 0;
     font-weight: 600;
 }
@@ -170,7 +170,7 @@ body {
     margin-right: 3px;
     margin-left: 5px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 .checkout {
    
@@ -227,7 +227,7 @@ body {
 }
 .order-text {
     margin-bottom: 8px;
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 600;
     padding: 10px;
 }
