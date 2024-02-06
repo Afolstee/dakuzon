@@ -63,7 +63,7 @@ function updateCart() {
                                 </div>
                                 <div id="delivery-price">
                                     <div id="delivery-date">Wednesday, June 15</div>
-                                    <div class="delivery-price">$4.99 - Shipping</div>
+                                    <div class="delivery-price">$3.99 - Shipping</div>
                                 </div>
                             </div>
                             <div class="delivery-option">
